@@ -1,0 +1,111 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 100px auto; /* Add margin to move content down and center it horizontally */
+    padding: 0;
+    background: linear-gradient(to bottom right, #8a4cf6, #00bcd4, #4fc3f7);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Heading styles */
+.heading {
+    font-size: 4vw;
+    color: ghostwhite;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 0 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Add task container styles */
+#add-task {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Input field styles */
+#add-task input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-right: 10px;
+    width: 30vw;
+    height: 4vh;
+    text-indent: 10px;
+}
+
+#add-task input[type="text"]:focus {
+    outline: none;
+}
+
+/* Add task button styles */
+#add-task button {
+    padding: 6px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: linear-gradient(to bottom right, #2196f3, #1976d2);
+}
+
+#add-task button:hover {
+    outline: whitesmoke solid 3px;
+}
+
+/* Task list container styles */
+#task-list-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Task list styles */
+#task-list {
+    list-style-type: none;
+    padding: 0;
+    width: 20vw;
+}
+
+/* Individual task styles */
+li {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task {
+    flex: 1;
+    margin-left: 10px;
+}
+
+/* Delete button styles */
+.delete-btn {
+    background-image: url("../images/delete-button-red.png");
+    background-size: cover;
+    background-color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    filter: grayscale(60%);
+    background-image: url("../images/delete-button-red.png");
+    background-size: cover;
+    background-color: white;
+}
+
+/* Checkbox styles */
+[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: 10px;
+}
